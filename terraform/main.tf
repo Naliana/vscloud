@@ -43,8 +43,8 @@ resource "aws_security_group" "allow_all" {
 }
 
 resource "aws_instance" "vsc" {
-  ami           = "ami-01bf84e74777aae82"
-	instance_type = "t3.micro"
+  ami           = "ami-0ddc70e50205f89b6"
+	instance_type = "t3.xlarge"
   count            = 1
   associate_public_ip_address = true
 	key_name         = "ssh-key"

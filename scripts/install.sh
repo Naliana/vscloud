@@ -10,5 +10,7 @@ sed -i.bak 's/bind-addr: 127.0.0.1:8080/bind-addr: 0.0.0.0:443/' ~/.config/code-
 
 sudo setcap cap_net_bind_service=+ep /usr/lib/code-server/lib/node
 
+sudo systemctl enable --now code-server@$USER
 #3 run the server
 #code-server #+ path to repo for opening specific repos (variable)
+sudo yum install git -y
